@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+}
+body{
+    background: #000;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+/* ------------------------------------------ */
+.container{
+    /* max-width: 70vw;
+    max-height: 60vh; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70vw;
+    height: 50vh;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to bottom,  rgb(187, 234, 238), 60%, rgb(226, 206, 125));
+}
+/* ------------------------------------------ */
+.dinasour{
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    left: 5vw;
+    /* bottom: calc(-45vh + 100px); */
+    bottom: 1vh;
+    background: url("media/dino.png");
+    animation: dinasourRunning 0.25s steps(2) infinite;
+    padding: 0;
+    margin: 0;
+} 
+.dinasour-crashed{
+    background-position-x:-252px;   
+}
+@keyframes dinasourRunning{
+    from{
+        background-position-x:-84px;
+    }
+    to{
+        background-position-x:-252px;
+        }
+    }
+/* ------------------------------------------ */
+.ground{
+    width: 200%;
+    height: 5.5vh;
+
+    position: absolute;
+    bottom: 0;
+    
+    
+    background: url("media/suelo.png");
+}
+/* ------------------------------------------ */
+.score{
+    width: 20vw;
+    height: 5vh;
+
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+
+    color: #d48871;
+    font-size: 3rem;
+    text-align: right;
+}
+
+
+
+    
+    
