@@ -18,9 +18,10 @@ body{
     height: 50vh;
     transform: translate(-50%,-50%);
     background: linear-gradient(to bottom,  rgb(187, 234, 238), 60%, rgb(226, 206, 125));
+    overflow: hidden;
 }
 /* ------------------------------------------ */
-.dinasour{
+.dinosaur{
     width: 84px;
     height: 84px;
     position: absolute;
@@ -32,7 +33,7 @@ body{
     padding: 0;
     margin: 0;
 } 
-.dinasour-crashed{
+.dinosaur-crashed{
     background-position-x:-252px;   
 }
 @keyframes dinasourRunning{
@@ -45,14 +46,15 @@ body{
     }
 /* ------------------------------------------ */
 .ground{
-    width: 200%;
+    width: calc(1280px *2);
     height: 5.5vh;
 
     position: absolute;
-    bottom: 0;
+    bottom: -2vh;
     
     
     background: url("media/suelo.png");
+    background-repeat: repeat-x;
 }
 /* ------------------------------------------ */
 .score{
