@@ -53,6 +53,11 @@ function velYRender() {
     if (dinoPos<=10) {dinoPos = 10; dinoVely = 0;}
 }
 
+var cactus = document.createElement("div");
+cactus.classList.add("cactus");
+document.querySelector(".container").appendChild(cactus);
+cactus.style.right = 0 - cactus.offsetWidth + "px";
+cactus.style.bottom = 0 ;
 
 // main functions--------------------------------------
 /**
@@ -65,7 +70,7 @@ function start(){
             // event.key === "ArrowUp" ||
             event.key == " " 
             ) {
-            if (dinoPos<=10) {dinoVely += 40;}
+            if(dinoPos<=10) {dinoVely += 40;}
         }
         
     });

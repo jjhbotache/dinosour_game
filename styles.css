@@ -18,7 +18,7 @@ body{
     height: 50vh;
     transform: translate(-50%,-50%);
     background: linear-gradient(to bottom,  rgb(187, 234, 238), 60%, rgb(226, 206, 125));
-    overflow: hidden;
+    /* overflow:    hidden; */
 }
 /* ------------------------------------------ */
 .dinosaur{
@@ -60,7 +60,7 @@ body{
 .score{
     width: 20vw;
     height: 5vh;
-
+    
     position: absolute;
     top: 5px;
     right: 15px;
@@ -70,7 +70,15 @@ body{
     font-size: 3rem;
     text-align: right;
 }
-
+/* ------------------------------------------ */
+.cactus{
+    position: absolute;
+    height: 96px;
+    width: 46px;
+    background: url("media/cactus1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
     
